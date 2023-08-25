@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDiro에 오신걸 환영합니다.</title>
+
+    <link rel="stylesheet" href="../css/main/main.css">
+    <link rel="stylesheet" href="../css/token.css">
+    <!-- <script type="module" src="../js/main/slide.js"></script> -->
+    <script src="../js/header.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header id="header" class="header">
+
+        <!-- 헤더 로고 -->
+
+        <div id="header__logo">
+            <img src="../images/logo/UDiro_seoul_logo2.png" alt="" id="header__logo__img">
+        </div>
+
+        <!-- 헤더 로고 끝 -->
+
+        <!-- 헤더 메뉴 시작 -->
+
+        <ul id="header__menu">
+            <li class="header__menu__list" id="header__menu__map">지도</li>
+            <li class="header__menu__list" id="header__menu__culture">문화</li>
+        </ul>
+
+        <!-- 헤더 메뉴 끝 -->
+
+        <!-- 로그인, 회원가입 -->
+
+        <div id="login" class="login__signUp">로그인</div>
+        <div id="mypage" class="login__signUp noshow">마이페이지</div>
+        <div id="signUp" class="login__signUp">회원가입</div>
+        <div id="logout" class="login__signUp noshow">로그아웃</div>
+        <!-- 로그인, 회원가입 끝 -->
+    </header>
+
+    <!-- 헤더 끝 -->
+
+
+    <!-- 전체 컨테이너 시작 -->
+    <div id="container">
+
+        <!-- 중앙 메인 로고 -->
+        <div id="main__logo">
+            <img src="../images/logo/UDiro_seoul_logo2.png" alt="중앙메인로고" id="main__logo__img">
+        </div>
+        <!-- 중앙 메인로고 끝 -->
+
+
+        <!-- 메인 검색창 부분 -->
+        <div id="Search__description">
+            <span> Search </span>
+        </div>
+
+
+        <!-- 카테고리 선택 -->
+        <form action="" id="search__form">
+            <div id="search__bar__container">
+                <select name="search__category" id="search__bar">
+                    <option value="장소">장소를 선택해 주세요</option>
+                    <option value="국립중앙박물관·용산가족공원">국립중앙박물관·용산가족공원</option>
+                    <option value="수유리 먹자골목">수유리 먹자골목</option>
+                    <option value="잠실종합운동장">잠실종합운동장</option>
+                    <option value="창덕궁·종묘">창덕궁·종묘</option>
+                    <option value="북촌한옥마을">북촌한옥마을</option>
+                    <option value="쌍문동 맛집거리">쌍문동 맛집거리</option>
+                    <option value="성수카페거리">성수카페거리</option>
+                    <option value="신림역">신림역</option>
+                    <option value="선릉역">선릉역</option>
+                    <option value="교대역">교대역</option>
+                    <option value="왕십리역">왕십리역</option>
+                    <option value="이태원 관광특구">이태원 관광특구</option>
+                    <option value="북서울꿈의숲">북서울꿈의숲</option>
+                    <option value="뚝섬한강공원">뚝섬한강공원</option>
+                    <option value="서울대공원">서울대공원</option>
+                    <option value="망원한강공원">망원한강공원</option>
+                    <option value="신도림역">신도림역</option>
+                    <option value="고속터미널역">고속터미널역</option>
+                    <option value="낙산공원·이화마을">낙산공원·이화마을</option>
+                    <option value="반포한강공원">반포한강공원</option>
+                    <option value="강남 MICE 관광특구">강남 MICE 관광특구</option>
+                    <option value="압구정로데오거리">압구정로데오거리</option>
+                    <option value="서울숲공원">서울숲공원</option>
+                    <option value="잠실한강공원">잠실한강공원</option>
+                    <option value="가로수길">가로수길</option>
+                    <option value="이촌한강공원">이촌한강공원</option>
+                    <option value="경복궁·서촌마을">경복궁·서촌마을</option>
+                    <option value="역삼역">역삼역</option>
+                    <option value="건대입구역">건대입구역</option>
+                    <option value="영등포 타임스퀘어">영등포 타임스퀘어</option>
+                    <option value="구로디지털단지역">구로디지털단지역</option>
+                    <option value="월드컵공원">월드컵공원</option>
+                    <option value="남산공원">남산공원</option>
+                    <option value="인사동·익선동">인사동·익선동</option>
+                    <option value="연신내역">연신내역</option>
+                    <option value="용산역">용산역</option>
+                    <option value="노량진">노량진</option>
+                    <option value="동대문 관광특구">동대문 관광특구</option>
+                    <option value="잠실 관광특구">잠실 관광특구</option>
+                    <option value="종로·청계 관광특구">종로·청계 관광특구</option>
+                    <option value="홍대 관광특구">홍대 관광특구</option>
+                    <option value="신촌·이대역">신촌·이대역</option>
+                    <option value="가산디지털단지역">가산디지털단지역</option>
+                    <option value="명동 관광특구">명동 관광특구</option>
+                    <option value="서울역">서울역</option>
+                    <option value="광화문·덕수궁">광화문·덕수궁</option>
+                    <option value="창동 신경제 중심지">창동 신경제 중심지</option>
+                    <option value="DMC(디지털미디어시티)">DMC(디지털미디어시티)</option>
+                    <option value="강남역">강남역</option>
+                    <option value="여의도">여의도</option>
+                </select>
+                <!-- 카테고리 선택  끝-->
+
+
+                <!-- 검색창 부분 -->
+                <!-- <input type="text" id="search__bar" placeholder="ex) 장소: 역삼역, 업종: 카페"> -->
+                <!-- 검색창 부분 끝 -->
+
+            </div>
+        </form>
+
+        <!-- 구 슬라이드 -->
+        <div class="slide slide_wrap">
+            <img src="../images/mainPlace/강남 mice 관광특구.png" class="slide_item">
+            <img src="../images/mainPlace/신도림역.jpg" class="slide_item">
+            <img src="../images/mainPlace/국립중앙박물관 용산가족공원.PNG" class="slide_item">
+            <img src="../images/mainPlace/서울대공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/북촌한옥마을.jpg" class="slide_item">
+            <img src="../images/mainPlace/잠실종합운동장.jpg" class="slide_item">
+            <img src="../images/mainPlace/낙산공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/뚝섬한강공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/망원한강공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/잠실한강공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/이촌한강공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/쌍문동 맛집거리.jpg" class="slide_item">
+            <img src="../images/mainPlace/건대입구역.jpg" class="slide_item">
+            <img src="../images/mainPlace/성수카페거리.PNG" class="slide_item">
+            <img src="../images/mainPlace/반포한강공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/신림역.jpg" class="slide_item">
+            <img src="../images/mainPlace/고속터미널역.jpg" class="slide_item">
+            <img src="../images/mainPlace/이태원 관광특구.jpg" class="slide_item">
+            <img src="../images/mainPlace/연신내역.jpg" class="slide_item">
+            <img src="../images/mainPlace/역삼역.jpg" class="slide_item">
+            <img src="../images/mainPlace/교대역.jpg" class="slide_item">
+            <img src="../images/mainPlace/서울숲공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/가로수길.jpg" class="slide_item">
+            <img src="../images/mainPlace/월드컵공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/북서울꿈의숲.jpg" class="slide_item">
+            <img src="../images/mainPlace/창덕궁 종묘.jpg" class="slide_item">
+            <img src="../images/mainPlace/용산역.jpg" class="slide_item">
+            <img src="../images/mainPlace/영등포 타임스퀘어.jpg" class="slide_item">
+            <img src="../images/mainPlace/압구정 로데오거리.jpg" class="slide_item">
+            <img src="../images/mainPlace/선릉역.jpg" class="slide_item">
+            <img src="../images/mainPlace/노량진.jpg" class="slide_item">
+            <img src="../images/mainPlace/왕십리역.jpg" class="slide_item">
+            <img src="../images/mainPlace/동대문 관광특구.PNG" class="slide_item">
+            <img src="../images/mainPlace/수유리 먹자골목.jpg" class="slide_item">
+            <img src="../images/mainPlace/구로디지털단지역.jpg" class="slide_item">
+            <img src="../images/mainPlace/인사동 익선동.png" class="slide_item">
+            <img src="../images/mainPlace/경복궁 서촌마을.jpg" class="slide_item">
+            <img src="../images/mainPlace/광화문 덕수궁.jpeg" class="slide_item">
+            <img src="../images/mainPlace/서울역.jpg" class="slide_item">
+            <img src="../images/mainPlace/남산공원.jpg" class="slide_item">
+            <img src="../images/mainPlace/명동 관광특구.jpg" class="slide_item">
+            <img src="../images/mainPlace/종로 청계 관광특구.PNG" class="slide_item">
+            <img src="../images/mainPlace/잠실 관광특구.PNG" class="slide_item">
+            <img src="../images/mainPlace/신촌이대역.PNG" class="slide_item">
+            <img src="../images/mainPlace/DMC 디지털 미디어 시티.jpg" class="slide_item">
+            <img src="../images/mainPlace/강남역.PNG" class="slide_item">
+            <img src="../images/mainPlace/홍대 관광특구.PNG" class="slide_item">
+            <img src="../images/mainPlace/창동 신경제 중심지.png" class="slide_item">
+            <img src="../images/mainPlace/가산디지털단지역.jpg" class="slide_item">
+            <img src="../images/mainPlace/여의도.jpeg" class="slide_item">
+
+            <!--  ['남산공원', '강남 MICE 관광특구', '동대문 관광특구', '명동 관광특구', '이태원 관광특구', '잠실 관광특구', '종로·청계 관광특구', '홍대 관광특구', '경복궁·서촌마을', '광화문·덕수궁', '창덕궁·종묘', '가산디지털단지역', '강남역', '건대입구역', '고속터미널역', '교대역', '구로디지털단지역', '서울역', '선릉역', '신도림역', '신림역', '신촌·이대역', '역삼역', '연신내역', '용산역', '왕십리역', 'DMC(디지털미디어시티)', '창동 신경제 중심지', '노량진', '낙산공원·이화마을', '북촌한옥마을', '가로수길', '성수카페거리', '수유리 먹자골목', '쌍문동 맛집거리', '압구정로데오거리', '여의도', '영등포 타임스퀘어', '인사동·익선동', '국립중앙박물관·용산가족공원', '뚝섬한강공원', '망원한강공원', '반포한강공원', '북서울꿈의숲', '서울대공원', '서울숲공원', '월드컵공원', '이촌한강공원', '잠실종합운동장', '잠실한강공원'] -->
+
+
+            <div class="slide_prev_button slide_button">◀</div>
+            <div class="slide_next_button slide_button">▶</div>
+            <ul class="slide_pagination"></ul>
+
+        </div>
+        <div id="people">
+            <!-- <div id="infomation">
+            </div> -->
+            <div id="peopleNum"></div>
+
+        </div>
+
+        <!-- 구 슬라이드 끝 -->
+    </div>
+
+    <!-- 전체 컨테이너 끝 -->
+    <footer>
+        <div id="sns">
+            <ul>
+                <li><img src="../images/logo/instagram.png" alt=""></li>
+                <li><img src="../images/logo/meta.png" alt=""></li>
+                <li><img src="../images/logo/twitter.png" alt=""></li>
+            </ul>
+        </div>
+        <div id="copyright">Copyright 2023. UDiro. All rights reserved</div>
+    </footer>
+
+    <script src="../js/main/main.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Find ID</title>
+    <link rel="stylesheet" href="../../css/auth/findId.css">
+    <script src="../../js/location/findId.js" defer></script>
+    <script src="../../js/auth/findId.js" defer></script>
+</head>
+
+<body>
+
+
+    <!-- 헤더 끝 -->
+    <div>
+        <h2>계정 정보 찾기</h2>
+    </div>
+
+    <hr>
+    <div id="logoContainer">
+        <img src="../../images/logo/UDiro_seoul_logo1.png" alt="udiro_logo_2">
+    </div>
+    <div id="container">
+        <h2>아이디 찾기</h2>
+        <br>
+        <br>
+        <div id="content">
+            <span>이름　　</span>
+            <input type="text" placeholder="이름을 입력하세요" maxlength="20" id="idinput">
+        </div>
+        <div id="content">
+            <span>이메일</span>
+            <input type="text" placeholder="입력하신 이메일을 입력하세요" maxlength="20" id="emailinput">
+            <button onclick="validation()">아이디 받기</button>
+        </div>
+        <!-- <div id="content">
+            <span>인증번호</span>
+            <input type="text" placeholder="인증번호를 입력하세요" maxlength="20" id="idinput">
+            <button>아이디찾기</button>
+        </div> -->
+        <div id="centerGo">
+            <span id="findPw">비밀번호 찾기</span>&nbsp; |&nbsp;
+            <span id="signUp">회원가입</span>
+        </div>
+    </div>
+    <footer>Copyright © UDiro Corp. All Rights Reserved.</footer>
+</body>
+
+</html>

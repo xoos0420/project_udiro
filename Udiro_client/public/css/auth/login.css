@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NanumSquareNeo-Variable';
+    text-decoration: none;
+}
+
+#account {
+    padding: 20px 28px;
+    width: 412px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+body {
+    margin-top: 100px;
+
+}
+
+#id {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+#pw {
+    margin-top: 10px;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #3C7FC0;
+    margin: 15px 0;
+}
+
+#login {
+    display: block;
+    width: 410px;
+    height: 45px;
+    padding: 13px 0 13px;
+    border-radius: 6px;
+    border: none;
+    background-color: #3C7FC0;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    padding-left: 0px;
+
+}
+
+ul>li,
+label>input {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #888;
+    text-align: center;
+}
+
+
+
+#logoContainer img {
+    width: 15%;
+    height: 15%;
+    margin-bottom: 50px;
+}
+
+#logoContainer {
+    text-align: center;
+}
+
+#account {
+    margin: 0 auto;
+    background-color: #C2E4FF;
+}
+
+#idinput,
+#pwinput {
+    box-sizing: border-box;
+    height: 48px;
+    border: 1px solid #3C7FC0;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#signUp__btn {
+    display: block;
+    width: 100%;
+    padding: 13px 0 13px;
+    border-radius: 6px;
+    border: solid 1px rgba(0, 0, 0, .15);
+    background-color: #3C7FC0;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+#signUp__btn>a {
+    color: white;
+}
+
+#find {
+    float: right;
+    margin-bottom: 15px;
+}
+
+#find>span {
+    line-height: 25px;
+}
+
+#autoLogin {
+    float: left;
+    display: flex;
+}
+
+#autoLoginBtn {
+    width: auto;
+}
+
+#kakao-login-btn-img {
+    background-size: cover;
+    width: 183px;
+    height: 45px;
+}
+
+#loginFlex {
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+
+    margin-top: 48px;
+
+}

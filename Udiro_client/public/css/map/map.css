@@ -1,0 +1,114 @@
+/*map부분*/
+
+#map {
+    height: 100%;
+}
+
+html,
+body {
+    height: 95.6%;
+    margin: 0;
+    padding: 0;
+}
+
+#image-buttons {
+    position: fixed;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    z-index: 9999;
+    border-radius: 25px;
+}
+
+#image-buttons button {
+    justify-content: center;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+#image-buttons img {
+    width: 80px;
+    height: 80px;
+}
+
+#home-button img {
+    height: 80px;
+    width: 80px;
+}
+
+#refresh-button img {
+    width: 65px;
+    height: 64px;
+    left: 6px;
+}
+
+#search-button img {
+    left: 10px;
+}
+
+
+/* seach이미지 눌렀을떄*/
+#search-bar {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#search-bar input {
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+#search-bar__close {
+    float: right;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#search-bar.active {
+    display: block;
+}
+
+/*see 눌렀을때*/
+.seecheckbox {
+    display: none;
+}
+
+
+.seecheckbox input {
+    width: 25px;
+    height: 25px;
+    margin: auto 5px;
+}
+
+.seecheckbox-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.active {
+    display: flex;
+}
+
+.see__more {
+    cursor: pointer;
+}
+
+#sidebar__bigMenu {
+    cursor: default !important;
+}

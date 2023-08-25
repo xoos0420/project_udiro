@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/place/autocomplete/output?parameters"></script> -->
+    <link rel="stylesheet" href="../../css/map/map.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/map/modal.css">
+    <link rel="stylesheet" href="../../css/token.css">
+    <script src="../../js/header.js" defer></script>
+
+
+
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div id="header__logo">
+            <img src="../../images/logo/UDiro_seoul_logo2.png" alt="" id="header__logo__img">
+        </div>
+
+
+        <ul id="header__menu">
+            <li class="header__menu__list" id="header__menu__map">지도</li>
+            <li class="header__menu__list" id="header__menu__culture">문화</li>
+        </ul>
+
+        <!-- 로그인, 회원가입 -->
+
+        <div id="login" class="login__signUp">로그인</div>
+        <div id="mypage" class="login__signUp noshow">마이페이지</div>
+        <div id="signUp" class="login__signUp">회원가입</div>
+        <div id="logout" class="login__signUp noshow">로그아웃</div>
+        <!-- 로그인, 회원가입 끝 -->
+
+    </header>
+    <div id="map" style="width:100%; height: 106%;"></div>
+    <div id="image-buttons">
+
+        <button id="search-button">
+            <img src="../../images/map/ddodbogi.png" alt="Image">
+        </button>
+        <!-- <div id="search-bar">
+            <input type="text" placeholder="검색어를 입력하세요">
+        </div> -->
+
+        <select id="search-bar" onchange="">
+            <option value="남산공원">남산공원</option>
+            <option value="강남 MICE 관광특구">강남 MICE 관광특구</option>
+            <option value="동대문 관광특구">동대문 관광특구</option>
+            <option value="명동 관광특구">명동 관광특구</option>
+            <option value="이태원 관광특구">이태원 관광특구</option>
+            <option value="잠실 관광특구">잠실 관광특구</option>
+            <option value="종로·청계 관광특구">종로·청계 관광특구</option>
+            <option value="홍대 관광특구">홍대 관광특구</option>
+            <option value="경복궁·서촌마을">경복궁·서촌마을</option>
+            <option value="광화문·덕수궁">광화문·덕수궁</option>
+            <option value="창덕궁·종묘">창덕궁·종묘</option>
+            <option value="가산디지털단지역">가산디지털단지역</option>
+            <option value="강남역">강남역</option>
+            <option value="건대입구역">건대입구역</option>
+            <option value="고속터미널역">고속터미널역</option>
+            <option value="교대역">교대역</option>
+            <option value="구로디지털단지역">구로디지털단지역</option>
+            <option value="서울역">서울역</option>
+            <option value="선릉역">선릉역</option>
+            <option value="신도림역">신도림역</option>
+            <option value="신림역">신림역</option>
+            <option value="신촌·이대역">신촌·이대역</option>
+            <option value="역삼역">역삼역</option>
+            <option value="연신내역">연신내역</option>
+            <option value="용산역">용산역</option>
+            <option value="왕십리역">왕십리역</option>
+            <option value="DMC(디지털미디어시티)">DMC(디지털미디어시티)</option>
+            <option value="창동 신경제 중심지">창동 신경제 중심지</option>
+            <option value="노량진">노량진</option>
+            <option value="낙산공원·이화마을">낙산공원·이화마을</option>
+            <option value="북촌한옥마을">북촌한옥마을</option>
+            <option value="가로수길">가로수길</option>
+            <option value="성수카페거리">성수카페거리</option>
+            <option value="수유리 먹자골목">수유리 먹자골목</option>
+            <option value="쌍문동 맛집거리">쌍문동 맛집거리</option>
+            <option value="압구정로데오거리">압구정로데오거리</option>
+            <option value="여의도">여의도</option>
+            <option value="영등포 타임스퀘어">영등포 타임스퀘어</option>
+            <option value="인사동·익선동">인사동·익선동</option>
+            <option value="국립중앙박물관·용산가족공원">국립중앙박물관·용산가족공원</option>
+            <option value="뚝섬한강공원">뚝섬한강공원</option>
+            <option value="망원한강공원">망원한강공원</option>
+            <option value="반포한강공원">반포한강공원</option>
+            <option value="북서울꿈의숲">북서울꿈의숲</option>
+            <option value="서울대공원">서울대공원</option>
+            <option value="서울숲공원">서울숲공원</option>
+            <option value="월드컵공원">월드컵공원</option>
+            <option value="이촌한강공원">이촌한강공원</option>
+            <option value="잠실종합운동장">잠실종합운동장</option>
+            <option value="잠실한강공원">잠실한강공원</option>
+        </select>
+
+        <button id="refresh-button">
+            <img src="../../images/map/reload.png" alt="Image">
+        </button>
+        <button class="see-button btn-open-popup">
+            <img src=" ../../images/map/eye.png" alt="Image">
+        </button>
+
+
+        <div class="seecheckbox-container">
+            <!-- <div class="seecheckbox">
+                <img src="../../images/map/heart.png">
+                <input type="checkbox" id="heartCheckbox" onchange="toggleMarkerVisibility('heart')">
+            </div> -->
+            <div class="seecheckbox">
+                <img src="../../images/map/restroom.png">
+                <input type="checkbox" id="restroomCheckbox">
+            </div>
+            <div class="seecheckbox">
+                <img src="../../images/map/parking.png">
+                <input type="checkbox" id="parkingCheckbox">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- 날씨, 인구혼잡도, 교통 모달창 (see버튼 클릭시 보여줄것) -->
+    <div class="modal">
+        <!-- <div class="close"></div> -->
+
+        <div class="modal_small" id="weather">
+            <p>날씨</p>
+            <div id="weather_box">
+                <img src="https://cdn4.iconfinder.com/data/icons/origami-25/64/Sun_origami_paper_craft_creative-64.png"
+                    id="weather_now">
+                <div class="description_now" id="weather_desc"> 장소를 선택해 주세요
+                </div>
+            </div>
+            <div class="small">
+                <button class="see__more weather_click" id="weather_click">자세히 보기</button>
+            </div>
+        </div>
+
+        <div class="modal_small" id="road">
+            <p>도로소통 단계</p>
+            <div class="description_now" id="road_desc">장소를 선택해 주세요</div>
+            <div class="small">
+                <button class="see__more" id="road_click">자세히 보기</button>
+            </div>
+        </div>
+
+        <div class="modal_small" id="person">
+            <p>인구 혼잡도</p>
+            <div class="description_now" id="people_desc">장소를 선택해 주세요</div>
+            <div class="small">
+                <button class="see__more" id="person_click">자세히 보기</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- 자세히 보기 클릭시 -->
+    <div class="modal_big" id="modal_more_box">
+        <div class="modal2">
+            <div class="close"></div>
+            <div class="modal_More">
+                <p>날씨</p>
+
+                <div id="weather_box_big">
+                    <img src="" id="weather_big">
+                    <br>
+                    최저 / 최고 기온
+                    <div class="description_now2" id="wt_des"> 잠시만 기다려 주세요 </div>
+                    습도, 강수량, 확률
+                    <div class="description_now2" id="wt_rain"> </div>
+                    날씨 정보
+                    <div class="description_now2" id="wt_rain_des"> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal3">
+            <div class="close"></div>
+
+            <div class="modal_More">
+                <p>인구 혼잡도</p>
+
+                <div id="weather_box_big">
+                    <img src="../../images/map/peopel.png" id="people_big">
+                    <br>
+                    인구 혼잡도
+                    <div class="description_now2" id="live_people"> 잠시만 기다려 주세요 </div>
+                    메세지
+                    <div class="description_now2 msg_desc" id="live_msg"> </div>
+                    인구 지표
+                    <div class="description_now2" id="live_tb"> </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal4">
+            <div class="close"></div>
+
+            <div class="modal_More">
+                <p>도로상황</p>
+
+                <div id="weather_box_big">
+                    <img src="https://cdn1.iconfinder.com/data/icons/interface-travel-and-environment/64/highway-travel-asphalt-journey-street-road-256.png"
+                        id="road_big">
+                    <br>
+                    도로 상황
+                    <div class="description_now2" id="road_Traffic"> 잠시만 기다려 주세요 </div>
+                    메세지
+                    <div class="description_now2 msg_desc" id="road_msg"> </div>
+                    전체도로 평균 속도
+                    <div class="description_now2" id="road_spd"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 날씨, 인구혼잡도, 교통 모달창 (see버튼 클릭시 보여줄것 끝) -->
+
+    <div class="box-style">
+        <table>
+            <tbody>
+                <tr>
+                    <td><img
+                            src="https://t4.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/A1Z/image/Ek1fJDgIQ4Qv9voutNTqjt9hcdg.jpg">
+                    </td>
+                    <td>붐빔</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/7J1ll1ouAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
+                    </td>
+                    <td>약간붐빔</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExIVFhUXFxoXFxcVFxcXFxcXFxcXFxcVFR0YHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACMQAQEBAQABAwQDAQAAAAAAAAABEQIhMUHwElFhkYGx0XH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIHBv/EABcRAQEBAQAAAAAAAAAAAAAAAAARAUH/2gAMAwEAAhEDEQA/APPVlY1de2c8irqANWpasqX/AKiEImnVFKsQgKakKCqziiGmhaKWqzVAv3Rqs0EWRIuqCiagtKkoCxAoEKFBdMZigBKAzF1NKqmtMw0GklNSURq0prMBvEqH5BYBagRYfsApKmgL4QqAol6WUGWpUSqrVpomCKnkxdQFz+2S0FTCVqgyQoKnQsArEUgqnMXWf4agauIjUohalKloNRMWJAXTViCNQxIkQa8IUAlRrUoJhKEqqtqGgFolAWgRBWfp/CqohaWCCGFooozaBFtYq6YKsSdLKXFBZUlEF1EqzyC6k8EigKyojWpCUBcWsrMEKipYComrBUppgClxJSQFw0sSUFxGrUoAza0DK4l5XRTQ+qoJE0hIWK0jUTAFwKlEX0MRcAkEKDUgsnhIiKJ7loGqUkBSJi4CJaUAtCAIsCAustFBLAUVmxRRDEixJQTPyLYCoLWcUX2LVz+kA0OuSeQLUwWioYs9EgNSFZlakEIuGEgiULIAupphRVTCmiLyISgaaEBeaRMWgkNKaimrEwghatiSLYBIEsFRk/gxINEW1ZFv2BnRbz4LAZLFqWilEi0FkNIsENILKIliRU0VZUtUA32SxbyuAkWpAQ0PBaAaSlgqGnSaCxYVNBdVlZQW/PQWfwDLMAg0vTMVRDpIQoIBIKVlo0CKcp9QLpYkrXQiJa1embVVcKGgRpj6iURdLYsOgZi9VF0USryVBKIKLCJlMRWvBGWoIv6D9gjEa7oWqqNazqyAKkBFrNXDRSJaEALVgAUhohTD6SighIAVaYBaEBCphKuCiLqUFrNaxLAxJQLRSLLjK4C3oS9Z7gkbqcxep9gRKqLAJQwgFZsXoAiatLBQqkghIgUFxMXUACL6QEpahgoumHMBOv8AhSKC4hC/gE0MOgSwsUFSRrU0kENRcAXGpGaW4qFpKlbBCBoJQ0FSKqUBqJYREFZyCi4F8JvoDVrJogUImirjVSJaIkgoqqzjUTqoiUpQUSrazRcXTEamASh+0VItoyt6CFa1z+pqCxdak3yxpz2JG+4zKzb5a3wEWUY+oosbtTpnVn3CNQZlS9CRrfBrPXSwWKZ81m9E6/IRrCJpKDWDE6alRIsq6lqzBDrpnU+o3yqxq1OxNQNS01nVazG9JWZVnYm4z1ujYLWJ8/aUBWb8/UdPcA059WZ6wBEl81q+4Cqn+/6Ai0ACLQEc9a9v0A1q33Yt+fwAmOvDnP8AADOry1fX591A07OL6AicOvX5+Wb6/PuALx6HuoK5QBVP9WelANY0AV//2Q==">
+                    </td>
+                    <td>보통</td>
+                </tr>
+                <tr>
+                    <td><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGBNms5pQEbyFnLEzEN_8VWKrZO6PvpQ2qSw4sx56zalRDFchUGojEVcbo1_wewQGT5s&usqp=CAU">
+                    </td>
+                    <td>여유</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="../../js/map/map.js" defer></script>
+    <script src="../../js/map/modal.js" defer></script>
+    <script src="../../js/map/map_inner.js" defer></script>
+
+
+    <!-- 지도 -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=440d4850306225a19c1ade5724a9c73d&libraries=services"></script>
+    <script defer>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.526626, 126.970349), // 지도의 중심좌표
+                level: 7 // 지도의 확대 레벨
+            };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption); 
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Find ID</title>
+    <link rel="stylesheet" href="../../css/auth/newPW.css">
+    <script src="../../js/location/RegistPublic.js" defer></script>
+    <script src="../../js/auth/newPW.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h2>계정 정보 찾기</h2>
+    </div>
+
+    <hr>
+    <div id="logoContainer">
+        <img src="../../images/logo/UDiro_seoul_logo1.png" alt="udiro_logo_2">
+    </div>
+    <div id="container">
+        <h2>비밀번호 재설정</h2>
+        <br>
+        <br>
+        <div id="content">
+            <input type="text" placeholder="아이디를 입력해주세요" maxlength="20" id="idinput">
+        </div>
+        <div id="content">
+            <input type="password" placeholder="새 비밀번호" maxlength="20" id="pwinput">
+        </div>
+        <div id="content">
+            <input type="password" placeholder="새 비밀번호 확인" maxlength="20" id="pwinput2">
+        </div>
+        <ul>
+            <li>영문, 숫자, 특수문자를 함께 사용하면(8자 이상 16자 이하)보다 안전합니다.</li>
+            <li>다른 사이트와 다른 아이디만의 비밀번호를 만들어 주세요.</li>
+        </ul>
+
+        <div id="centerGo">
+            <button onclick="updatePW()">비밀번호 재설정</button>
+        </div>
+    </div>
+    <footer>Copyright © UDiro Corp. All Rights Reserved.</footer>
+
+</body>
+
+</html>

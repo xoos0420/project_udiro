@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+
+
+#logoContainer img {
+    width: 15%;
+    height: 15%;
+    margin-bottom: 30px;
+}
+
+#logoContainer {
+    text-align: center;
+}
+
+img {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+#all {
+    margin: 0 auto;
+    max-width: 768px;
+    min-width: 460px;
+    background-color: #C7E9FF;
+    color: #3498DB;
+}
+
+.inputtext {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 19px 0 8px;
+    display: block;
+}
+
+input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 110px 10px 14px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+#all {
+    width: 460px;
+    border: 1px solid #dadada;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 51px;
+    border: solid 1px #dadada;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 14px;
+}
+
+#gender {
+    background-size: 20px 8px;
+    width: 100%;
+    height: 29px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    border: none;
+    border-radius: 0;
+}
+
+.birth {
+    display: inline-block;
+    padding: 11px 14px;
+    height: 51px;
+    width: 100%;
+    width: 147px;
+    display: table-cell;
+}
+
+button {
+    color: #fff;
+    border: none;
+    background-color: #3498DB;
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#birthlist {
+    width: 100%;
+    display: table;
+}
+
+#birth {
+    width: 147px;
+    background-size: 20px 8px;
+    height: 29px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    border: none;
+    border-radius: 0;
+}
+
+.selectbir {
+    border: solid 1px #dadada;
+    width: 147px;
+    height: 51px;
+    display: inline-block;
+}
+
+/* #ssn1{
+    float: left;
+}
+#ssn1{
+    float: left;
+} */
+#ssn1,
+#ssn2 {
+    width: 48%;
+    display: inline-block;
+    padding-right: 14px;
+}
+
+#find {
+    width: 30%;
+    float: left;
+    background-color: #03c75a;
+    color: white;
+    padding-right: 14px;
+    text-align: center;
+}
+
+#sample6_postcode {
+    width: 30%;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 20px;
+    padding-right: 14px;
+}

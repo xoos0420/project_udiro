@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조회 좋아요 기능있는 메인페이지</title>
+    <link rel="icon" type="image/png" href="../../images/logo/UDiro_seoul_logo2.png">
+    <!-- <link rel="stylesheet" href="../public/css/culture3.css"> -->
+    <link rel="stylesheet" href="../../css/culture/culture.css">
+    <link rel="stylesheet" href="../../css/publicPost.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <script defer src="../../js/culture/culture.js" defer></script>
+    <script src="../../js/culture/culture_festa.js" defer></script>
+    <script src="../../js/header.js" defer></script>
+    <script src="../../js/sidebar.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header id="header" class="header">
+        <!-- 헤더 로고 -->
+        <div id="header__logo">
+            <img src="../../images/logo/UDiro_seoul_logo2.png" alt="" id="header__logo__img">
+        </div>
+        <!-- 헤더 로고 끝 -->
+        <!-- 헤더 메뉴 시작 -->
+        <ul id="header__menu">
+            <li class="header__menu__list" id="header__menu__map">지도</li>
+            <li class="header__menu__list" id="header__menu__culture">문화</li>
+        </ul>
+        <!-- 헤더 메뉴 끝 -->
+        <!-- 로그인, 회원가입 -->
+
+        <div id="login" class="login__signUp">로그인</div>
+        <div id="mypage" class="login__signUp noshow">마이페이지</div>
+        <div id="signUp" class="login__signUp">회원가입</div>
+        <div id="logout" class="login__signUp noshow">로그아웃</div>
+        <!-- 로그인, 회원가입 끝 -->
+    </header>
+    <!-- 헤더 끝 -->
+
+
+    <div id="big__container">
+        <!-- 사이드 바 -->
+        <div id="side__bar">
+            <ul id="side__bar__ul">
+                <li class="side__bar__li sidebar__bigMenu">문화</li>
+                <li class="side__bar__li sidebar__midMenu">지도</li>
+                <hr>
+                <br>
+                <select id="side__bar__select" onchange="">
+                    <option value="선택">원하는장소 선택</option>
+                    <option value="남산공원">남산공원</option>
+                    <option value="강남 MICE 관광특구">강남 MICE 관광특구</option>
+                    <option value="동대문 관광특구">동대문 관광특구</option>
+                    <option value="명동 관광특구">명동 관광특구</option>
+                    <option value="이태원 관광특구">이태원 관광특구</option>
+                    <option value="잠실 관광특구">잠실 관광특구</option>
+                    <option value="종로·청계 관광특구">종로·청계 관광특구</option>
+                    <option value="홍대 관광특구">홍대 관광특구</option>
+                    <option value="경복궁·서촌마을">경복궁·서촌마을</option>
+                    <option value="광화문·덕수궁">광화문·덕수궁</option>
+                    <option value="창덕궁·종묘">창덕궁·종묘</option>
+                    <option value="가산디지털단지역">가산디지털단지역</option>
+                    <option value="강남역">강남역</option>
+                    <option value="건대입구역">건대입구역</option>
+                    <option value="고속터미널역">고속터미널역</option>
+                    <option value="교대역">교대역</option>
+                    <option value="구로디지털단지역">구로디지털단지역</option>
+                    <option value="서울역">서울역</option>
+                    <option value="선릉역">선릉역</option>
+                    <option value="신도림역">신도림역</option>
+                    <option value="신림역">신림역</option>
+                    <option value="신촌·이대역">신촌·이대역</option>
+                    <option value="역삼역">역삼역</option>
+                    <option value="연신내역">연신내역</option>
+                    <option value="용산역">용산역</option>
+                    <option value="왕십리역">왕십리역</option>
+                    <option value="DMC(디지털미디어시티)">DMC(디지털미디어시티)</option>
+                    <option value="창동 신경제 중심지">창동 신경제 중심지</option>
+                    <option value="노량진">노량진</option>
+                    <option value="낙산공원·이화마을">낙산공원·이화마을</option>
+                    <option value="북촌한옥마을">북촌한옥마을</option>
+                    <option value="가로수길">가로수길</option>
+                    <option value="성수카페거리">성수카페거리</option>
+                    <option value="수유리 먹자골목">수유리 먹자골목</option>
+                    <option value="쌍문동 맛집거리">쌍문동 맛집거리</option>
+                    <option value="압구정로데오거리">압구정로데오거리</option>
+                    <option value="여의도">여의도</option>
+                    <option value="영등포 타임스퀘어">영등포 타임스퀘어</option>
+                    <option value="인사동·익선동">인사동·익선동</option>
+                    <option value="국립중앙박물관·용산가족공원">국립중앙박물관·용산가족공원</option>
+                    <option value="뚝섬한강공원">뚝섬한강공원</option>
+                    <option value="망원한강공원">망원한강공원</option>
+                    <option value="반포한강공원">반포한강공원</option>
+                    <option value="북서울꿈의숲">북서울꿈의숲</option>
+                    <option value="서울대공원">서울대공원</option>
+                    <option value="서울숲공원">서울숲공원</option>
+                    <option value="월드컵공원">월드컵공원</option>
+                    <option value="이촌한강공원">이촌한강공원</option>
+                    <option value="잠실종합운동장">잠실종합운동장</option>
+                    <option value="잠실한강공원">잠실한강공원</option>
+                </select>
+                <br>
+                <br>
+                <hr>
+
+                <li class="side__bar__li sidebar__midMenu">문화</li>
+                <hr>
+                <li class="side__bar__li sidebar__smallMenu">행사</li>
+                <li class="side__bar__li sidebar__smallMenu">장소</li>
+                <br>
+                <hr>
+                <li class="side__bar__li sidebar__midMenu">마이페이지</li>
+                <hr>
+                <li class="side__bar__li sidebar__smallMenu">내 정보 수정</li>
+            </ul>
+        </div>
+        <!-- 사이드 바 끝 -->
+        <!-- 전체 컨테이너 시작 -->
+
+        <!-- 문화정보 - 서울의 문화를 더 알고 싶다면 시작 -->
+        <div id="container">
+
+            <div class="image-container">
+                <div class="backgroundimage">
+                    <h2 class="mainimagetext1">문화정보</h2>
+                    <p class="mainimagetext2">서울의 문화를 더 알고 싶다면</p>
+                </div>
+            </div>
+
+            <!-- 문화정보 - 서울의 문화를 더 알고 싶다면 끝 -->
+
+            <!-- 지역 / 기간 / 분야 / 검색 표 시작 -->
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <style>
+                .custom-datepicker {
+                    height: 300px;
+                }
+
+                .custom-datepicker .ui-datepicker-calendar {
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                }
+            </style>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                var datepicker1, datepicker2;
+
+                $(document).ready(function () {
+                    datepicker1 = $("#datepicker1").datepicker({
+                        beforeShow: function (input, inst) {
+                            inst.dpDiv.addClass("custom-datepicker");
+                        },
+                        onClose: function () {
+                            $("#datepicker2").datepicker("show");
+                        }
+                    }).hide();
+                    datepicker2 = $("#datepicker2").datepicker({
+                        beforeShow: function (input, inst) {
+                            inst.dpDiv.addClass("custom-datepicker");
+                        },
+                        beforeShowDay: function (date) {
+                            var startDate = datepicker1.datepicker("getDate");
+                            var endDate = datepicker2.datepicker("getDate");
+                            if (startDate && !endDate) {
+                                return [true, "selected-range"];
+                            } else if (startDate && endDate && date >= startDate && date <= endDate) {
+                                return [true, "selected-range"];
+                            }
+                            return [true, ""];
+                        }
+                    }).hide();
+                });
+
+                function setPlaceholder(selectedValue) {
+                    var inputElement = document.getElementById("inputField");
+
+                    if (selectedValue === "지역") {
+                        inputElement.placeholder = "지역을 입력하세요";
+                        inputElement.type = "text";
+                        hideDatepickers();
+                    } else if (selectedValue === "제목") {
+                        inputElement.placeholder = "제목을 입력하세요";
+                        inputElement.type = "text";
+                        hideDatepickers();
+                    } else if (selectedValue === "내용") {
+                        inputElement.placeholder = "내용을 입력하세요";
+                        inputElement.type = "text";
+                        hideDatepickers();
+                    } else if (selectedValue === "기간") {
+                        inputElement.placeholder = "";
+                        inputElement.type = "hidden";
+                        showDatepickers();
+                    } else {
+                        inputElement.placeholder = "";
+                        inputElement.type = "text";
+                        hideDatepickers();
+                    }
+                }
+
+                function showDatepickers() {
+                    datepicker1.show();
+                    datepicker2.show();
+                    $("#date-range-separator").show();
+                }
+
+                function hideDatepickers() {
+                    datepicker1.hide();
+                    datepicker2.hide();
+                    datepicker1.val("");
+                    datepicker2.val("");
+                    $("#date-range-separator").hide();
+                }
+            </script>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="lengthlarger">
+                            <select onchange="setPlaceholder(this.value)" id="purpose"
+                                style="width:15%; height:50%; float:left; left:70px">
+                                <option value="guname" name="지역">지역</option>
+                                <option value="title" name="제목">제목</option>
+                                <option value="program" name="내용">내용</option>
+                            </select>
+                            <input type="text" id="inputField" style="width:15%; height:50%; width:500px;">
+                            <input type="text" id="datepicker1" placeholder="시작 날짜"
+                                style="width:15%; height:50%; width:250px; right:20px;">
+                            <input type="text" id="datepicker2" placeholder="종료 날짜"
+                                style="width:15%; height:50%; width:250px; left:20px;">
+                            <button type="button" class="needblack" id="searchbar2" onclick="search()">검색</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- 지역 / 기간 / 분야 / 검색 표 끝 -->
+
+            <!-- 공연, 행사, 축제 시작 -->
+            <div class="performancehead">
+                <div class="event_festival">
+                    <div class="heading">행사</div>
+                    <div class="showMore" id="festa_more"><a href="/culture/main">돌아가기</a>
+                    </div>
+                </div>
+                <div class="festival__container">
+                </div>
+            </div>
+            <!-- 공연, 행사, 축제 끝-->
+        </div>
+        <!-- 전체 컨테이너 끝 -->
+        <div id="centerGo"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+#side__bar {
+    width: 200px;
+    border: 1px solid #7FB4E3;
+    height: 800px;
+    position: sticky;
+    left: 0;
+    top: 80px;
+}
+
+#big__container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar__bigMenu {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.sidebar__midMenu {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sidebar__smallMenu {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#width {
+    width: 20%;
+}
+
+.centerGo {
+    width: 10%;
+}

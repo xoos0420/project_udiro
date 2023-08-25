@@ -1,0 +1,614 @@
+header {
+    margin: 0;
+}
+
+/* 문화정보 - 서울의 문화를 더 알고 싶다면 시작 */
+.backgroundimage {
+    background: url(../images/sub_bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+    /* position: relative; */
+    width: 100%;
+    height: 200px;
+    opacity: 0.8;
+}
+
+.mainimagetext1 {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+}
+
+.mainimagetext2 {
+    font-size: 1em;
+    text-align: center;
+    top: 80px;
+    position: relative;
+    box-sizing: border-box;
+    font-style: italic;
+    color: white;
+}
+
+.image-container {
+    margin-bottom: 10px;
+}
+
+/* 문화정보 - 서울의 문화를 더 알고 싶다면 끝 */
+
+/* 지역, 기간, 분야, 검색 시작 */
+/* 지역구간 시작 */
+
+td {
+    border: 2px solid #7fb4e3;
+    color: black;
+    text-align: center;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+}
+
+#local {
+    color: black;
+}
+
+.needblack {
+    color: black;
+    background-color: white;
+}
+
+.lengthlarger {
+    width: 140px;
+    height: 60px;
+    background-color: #7fb4e3;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.tagsize {
+    float: left;
+    box-sizing: none;
+    margin: 0px 30px;
+    width: 16%;
+    height: 35px;
+}
+
+.regionsearch {
+    float: left;
+    box-sizing: none;
+    margin: 0px 5px;
+    padding: 0px 0px 0px 3px;
+    width: 65%;
+    height: 35px;
+    font-size: 15px;
+}
+
+#searchbar1 {
+    float: right;
+    background-color: #0080c4;
+    width: 9%;
+    height: 35px;
+    margin: 0 10px 0 0;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.dash {
+    font-size: 30px;
+    color: black;
+}
+
+/* 지역 구간 끝 */
+
+/* 기간 구간 시작 */
+#datepicker01 {
+    float: left;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin: 7px 55px;
+}
+
+#datepicker02 {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin: 7px 55px;
+}
+
+td>input {
+    padding-left: 10px;
+}
+
+/* 기간 구간 끝 */
+
+/* 분야,검색 구간 시작 */
+.genre {
+    color: black;
+}
+
+.tagsize2 {
+    float: left;
+    box-sizing: none;
+    margin: 0px 10px 0 28px;
+    width: 120px;
+    height: 35px;
+    color: black;
+}
+
+.genresearch {
+    float: left;
+    box-sizing: none;
+    margin: 0px 3px;
+    width: 40%;
+    height: 35px;
+    font-size: 15px;
+}
+
+#searchbar2 {
+    float: right;
+    background-color: #0080c4;
+    width: 15%;
+    height: 35px;
+    margin: 0 10px 0 0;
+    border: 1.5px solid #0080c4;
+    border-radius: 5px;
+    color: white;
+}
+
+#searchbar3 {
+    float: right;
+    background-color: #0080c4;
+    width: 9%;
+    height: 35px;
+    margin: 0 10px 0 0;
+    border: 1.5px solid #0080c4;
+    border-radius: 5px;
+    color: white;
+}
+
+/* 분야, 검색 구간 끝 */
+/* 지역, 기간, 분야, 검색 끝 */
+
+/* 공연 카테고리 */
+
+.performancehead {
+    height: 350px;
+}
+
+.event_performance {
+    background-color: #0080c4;
+    text-align: center;
+    margin: 30px 0 0 0;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+}
+
+.festival__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.performance_image {
+    border: 5px solid #7fb4e3;
+    margin: 3px;
+    height: 250px;
+    width: 17.5%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+div>div>img {
+    width: 100%;
+    height: 70%;
+    margin: 7px 7px 0px 7px;
+    overflow: hidden;
+}
+
+.performancehead .place_image {
+    width: 200px;
+    height: 200px;
+}
+
+.performancehead .txt {
+    width: 200px;
+    height: 100px;
+}
+
+.txt>h2 {
+    font-size: 12px;
+    width: 145px;
+    margin: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.txt h2 {
+    font-size: 12px;
+}
+
+.txt span {
+    font-size: 10px;
+}
+
+/* .viewlike {
+    float: right;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0px 5px 0px 0px;
+} */
+
+/* 공연 카테고리 끝, 추가적인 행사/장소 css */
+.event_festival {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0080c4;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+}
+
+.event_festival .heading,
+.event_place .heading {
+    flex-grow: 1;
+    color: white;
+}
+
+.event_festival #festa__more,
+.event_place #place__more {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.festival__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.festival_image {
+    border: 5px solid #7fb4e3;
+    margin: 3px;
+    height: 250px;
+    width: 17.5%;
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.event_place {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0080c4;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+    margin: 270px 0px 0px 0px;
+}
+
+.place__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.place_image {
+    border: 5px solid #7fb4e3;
+    margin: 10px;
+    height: 250px;
+    width: 17.5%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+#viewandlike {
+    margin: 50px;
+    padding: 50px;
+}
+
+/* 추가된 CSS */
+@media screen and (max-width: 850px) {
+    .performancehead .performance_image {
+        width: 25%;
+    }
+}
+
+/* 공연, 행사, 장소 css 끝 */
+
+
+/* 버튼 css, 변경 가능성 매우 높음 */
+.buttoncontainer {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 auto;
+    margin: 40px 0px 50px 50px;
+}
+
+#floatselector {
+    width: 30px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: 800;
+    border: none;
+}
+
+
+/* 버튼 css 끝 */
+
+/* 검색 결과를 표시하기 위한 배경색 */
+.findlog_color {
+    background-color: gold;
+    text-align: center;
+    margin: 30px 0 0 0;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* 검색 결과를 표시하기 위한 배경색 끝 */
+
+
+/* 문화정보-간략 이미지 시작 */
+.intro-top .img-box {
+    position: relative;
+    float: left;
+    width: 41%;
+}
+
+.intro-top .img-box img {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+/* 문화정보-간략 이미지 끝 */
+
+/* 문화정보- 간략 이미지 오른쪽 간략설명 */
+
+.likeandview2 {
+    margin: 8px 0px 0px 0px;
+    float: right;
+    width: 100%;
+}
+
+.likecolor {
+    background-color: WHite;
+    color: GREY;
+    float: right;
+}
+
+.goright {
+    float: right;
+}
+
+.event-title {
+    height: 50px;
+    clear: both;
+}
+
+.intro-top {
+    display: block;
+    height: 800px;
+}
+
+.intro-top .txt-box {
+    float: right;
+    width: 53%;
+}
+
+.intro-top .txt-box .event-title h2 {
+    font-size: 22px;
+    line-height: 2.2;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+
+.type-box .type-th {
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 40px;
+    padding: 8px 0px 0px 0px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    float: left;
+}
+
+.type-box li .type-td {
+    padding: 10px;
+    width: 100%;
+    min-height: 57px;
+    font-size: 14px;
+    margin: 0;
+
+}
+
+.type-td span {
+    padding: 0px 0px 0px 20px;
+}
+
+
+.detail-btn a {
+    display: inline-block;
+    height: 40px;
+    width: 170px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    bottom: 9px;
+}
+
+/* 문화정보- 간략 이미지 오른쪽 간략설명 끝 */
+
+/* 상세정보 시작 */
+.loca-section {
+    margin-top: 100px;
+}
+
+.common-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.moreview {
+    text-align: center;
+    position: relative;
+}
+
+/* 상세정보 끝 */
+
+
+/* 페이지 이동 */
+
+.number {
+    margin: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.number li {
+    display: inline-block;
+}
+
+.number li {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #999;
+    border-radius: 10%;
+    font-weight: 500;
+}
+
+
+.number li .active {
+    background-color: #e6e6e6;
+}
+
+
+
+/* 장소 css 간략설명 변경 시작 */
+.event-title2 {
+    padding: 10px 0px 0px 0px;
+    height: 50px;
+    clear: both;
+}
+
+.type-box2 {
+    padding: 15px 0px 0px 0px;
+}
+
+.type-box2 .type-th {
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 40px;
+    padding: 8px 0px 0px 0px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    float: left;
+}
+
+.type-box2 li .type-td {
+    padding: 10px;
+    width: 100%;
+    min-height: 75px;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* 장소 css 간략설명 변경 끝 */
+
+#side__bar {
+    width: 200px;
+    border: 1px solid black;
+    height: 800px;
+    position: sticky;
+    left: 0;
+    top: 80px;
+}
+
+#big__container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar__bigMenu {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.sidebar__midMenu {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sidebar__smallMenu {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#width {
+    width: 20%;
+}
+
+#centerGo {
+    width: 10%;
+}
+
+/* 
+.loca-section common-section {
+    margin-top: 20px;
+} */
+
+.noSee {
+    display: none !important;
+}

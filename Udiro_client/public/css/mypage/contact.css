@@ -1,0 +1,252 @@
+/* 검색창 시작 */
+/* #search__bar__container {
+    position: relative;
+    width: 1100px;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#search__bar__mContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+#search__filter {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #89C2F5;
+    border: none;
+}
+
+#search__filter>option {
+    color: white;
+    background-color: #8FCAFF;
+    font-size: 14px;
+}
+
+#search__box {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #0080C4;
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 5px;
+    height: 40px;
+}
+
+#search__bar {
+
+    width: 90%;
+    height: 30px;
+    border: none;
+    margin-top: 3px;
+    outline: none;
+}
+
+#img {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+#search__filter,
+#search__bar {
+    border-radius: 10px;
+}
+
+#search__btn {
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: #89C2F5;
+    color: white;
+    border: none;
+} */
+
+/* 컨테이너 */
+#container {
+    width: 1100px;
+}
+
+#logoBox {
+    width: 100%;
+}
+
+#center__logo__1 {
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+/*게시판 시작*/
+li {
+    list-style: none;
+}
+
+
+i {
+    margin-right: 10px;
+}
+
+.card__name__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__name {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.card__more {
+    font-weight: 600;
+}
+
+.card {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.card-body {
+    margin-bottom: 80px;
+}
+
+/* 게시글 부분 굵은선 */
+.card-body .top {
+    border-top: 3px solid #0080C4;
+    border-bottom: 1px solid #0080C4;
+    background-color: #cae1f2;
+    font-weight: 600;
+}
+
+/* .card-body .top div {
+    /* color: white; */
+/* } */
+
+.card-body div {
+    border-bottom: 1px solid #999;
+}
+
+.card-body div div {
+    display: inline-block;
+    border-bottom: none;
+    text-align: center;
+}
+
+.card-body .recommand {
+    border-right: none;
+}
+
+.card-body .top .title {
+    text-align: center;
+}
+
+.card-body div .title {
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.card-body div .num,
+.name,
+.date,
+.count,
+.recommand {
+    width: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card-body div .num {
+    width: 15%;
+}
+
+
+.date,
+.name {
+    margin-left: 100px;
+}
+
+
+/* 페이지 이동 */
+
+.number {
+    margin: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.number li {
+    display: inline-block;
+}
+
+.number li {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #999;
+    border-radius: 10%;
+    font-weight: 500;
+}
+
+
+.number li .active {
+    background-color: #e6e6e6;
+}
+
+
+
+
+/*게시판 끝*/
+#side__bar {
+    width: 200px;
+    border: 1px solid black;
+    height: 800px;
+    position: sticky;
+    left: 0;
+    top: 80px;
+}
+
+#big__container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 글쓰기 버튼 */
+.btn {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #89C2F5;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+#right_go {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

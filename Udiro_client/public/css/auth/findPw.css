@@ -1,0 +1,145 @@
+/* 전체 영역 스타일링 */
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 16px;
+    color: #3498db;
+    box-shadow: 0px 5px 10px #ccc;
+}
+
+/* 페이지 타이틀 스타일링 */
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 버튼 스타일링 */
+button {
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+/* 로고 이미지 컨테이너 스타일링 */
+#logoContainer {
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* 로고 이미지 스타일링 */
+#logoContainer img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* 입력 폼 컨테이너 스타일링 */
+#container {
+    width: 450px;
+    margin: 0 auto;
+    background-color: #c7e9ff;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 300px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* 입력 폼 컨텐츠 스타일링 */
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* input과 button 사이 공간을 균등하게 설정 */
+    margin-bottom: 15px;
+}
+
+/* 입력 폼 라벨 스타일링 */
+#content span {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+/* 입력 폼 인풋 스타일링 */
+#content input {
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    flex: 1;
+}
+
+#content input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px #3498db20;
+    outline: none;
+}
+
+
+
+/* 링크 버튼 스타일링 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* hr 태그 스타일링 */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 50px 0;
+}
+
+/* 푸터 스타일링 */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* input 요소 스타일링 */
+
+
+#centerGo {
+    text-align: center;
+    margin-top: 30px;
+}

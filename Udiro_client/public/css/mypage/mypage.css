@@ -1,0 +1,89 @@
+/* 컨테이너 */
+
+#container1 {
+    width: 900px;
+    margin: 0 auto;
+    color: black;
+    margin-top: 20px;
+}
+
+
+
+/* 내 계정 시작 */
+
+p {
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#myAcount {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#profile__>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+#myAcount__UD {
+    display: flex;
+}
+
+#remove__picture {
+    width: 75px;
+    height: 25px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+
+}
+
+#update__picture {
+    width: 74px;
+}
+
+
+.mypage__btn {
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: gold
+}
+
+#my__Acount__delete__text p {
+    font-size: 12px;
+}
+
+.mypage__innerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#name__delete__btn {
+    background-color: red;
+    color: white;
+}
+
+/* 비밀번호 변경 */
+#password__update {
+    margin-left: 20px;
+}
+
+#width1 {
+    width: 10%;
+}
+
+#jjuim {
+    display: flex;
+}

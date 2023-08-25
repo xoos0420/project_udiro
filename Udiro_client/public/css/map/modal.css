@@ -1,0 +1,228 @@
+/* 전체 모달 설정 */
+body {
+    position: relative;
+    width: 100%;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    right: 150px;
+
+    /* width: 100%; */
+    height: 109.4%;
+    display: none;
+    z-index: 2;
+}
+
+#map {
+    z-index: 1;
+}
+
+.modal_small {
+    position: absolute;
+    top: 20%;
+    left: 89%;
+
+    width: 300px;
+    height: 150px;
+
+    /* padding: 40px; */
+    padding-top: 15px;
+    line-height: 35px;
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 400px;
+    height: 600px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    /* display: none; */
+    z-index: 9999;
+}
+
+.modal p {
+    font-size: 20px;
+}
+
+/* 전체 모달 설정 끝 */
+
+/* 작은 모달창 설정 */
+
+.small {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+
+}
+
+.description_now,
+.description_now2 {
+    margin-top: 10px;
+    font-size: 30px;
+    color: red;
+    height: 40px;
+}
+
+.description_now2 {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 60px;
+}
+
+
+.see__more {
+    margin-top: 15px;
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+
+    font-size: 8px;
+    background-color: #8FCAFF;
+    color: white;
+}
+
+/* 날씨 */
+#weather {
+    top: 40%;
+}
+
+#weather_box {
+    display: flex;
+    justify-content: center;
+}
+
+#weather_now {
+    width: 50px;
+    height: 50px;
+}
+
+#weather_big,
+#road_big {
+    width: 80px;
+}
+
+/* 인구혼잡도 */
+
+#person {
+    top: 60%;
+}
+
+/* 자세히 보기 큰 모달창 전체설정 */
+.modal2,
+.modal3,
+.modal4 {
+    /* position: absolute;
+    top: 0; */
+
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 5;
+}
+
+.modal_more_box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background-color: red;
+    top: -50%;
+    z-index: 4;
+}
+
+.modal_More {
+    left: 50%;
+    /* top: 50%; */
+
+    width: 400px;
+    height: 600px;
+
+    /* padding: 40px; */
+    padding-top: 15px;
+    line-height: 35px;
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+}
+
+button {
+    border: none;
+}
+
+.modal_More,
+.modal_more_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.show {
+    display: block;
+}
+
+.msg_desc {
+    font-size: 16px;
+}
+
+.modal_big {
+    font-size: 30px;
+}
+
+.box-style {
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    line-height: 1;
+    z-index: 878;
+}
+
+.box-style img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.box-style td {
+    padding: 2px 0;
+}

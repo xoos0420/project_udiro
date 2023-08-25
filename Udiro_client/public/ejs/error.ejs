@@ -1,0 +1,55 @@
+<style>
+    body {
+        margin: 1% auto;
+        max-width: 800px;
+        min-height: 200px;
+        padding: 100px 0px 15px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .error-image {
+        width: 20%;
+        height: 20%;
+        float: left;
+        position: relative;
+        top: 25px;
+    }
+
+    .error-content {
+        margin-right: auto;
+        /* Add this line to move the content to the right */
+        text-align: right;
+    }
+
+    @media (max-width: 00px) {
+        .error-image {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <a href="/">
+            <img style="width:30%; height:30%;" src="../images/logo/UDiro_seoul_logo1.png" alt="udiro_logo_2">
+        </a>
+        <div class="error-content">
+            <img class="error-image" src="../images/logo/error2.png" alt="에러페이지">
+            <br>
+            <h3>404 에러코드</h3>
+            <div>
+                <p>찾으시는 페이지가 없습니다.</p>
+                <p>잘못된 접근이거나 요청하신 페이지를 찾을 수 없습니다.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>

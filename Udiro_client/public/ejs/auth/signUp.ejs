@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../../css/auth/signUp.css">
+    <script src="../../js/location/RegistPublic.js" defer></script>
+</head>
+
+<body>
+    <div id="logoContainer">
+        <img src="../../images/logo/UDiro_seoul_logo1.png" alt="udiro_logo_2">
+    </div>
+    <div id="all">
+        <span class="inputtext">아이디</span>
+        <input type="text" name="userid" id="userid" maxlength="20" placeholder="아이디를 입력하세요(4~20자 사이의 대소문자 영어, 숫자)">
+        <span class="inputtext">비밀번호</span>
+        <input type="password" placeholder="비밀번호를 입력하세요(영문 숫자 특수기호 조합 8자리 이상)" name="userpw" id="userpw" maxlength="20">
+        <span class="inputtext">비밀번호 재확인</span>
+        <input type="password" name="userpw_re" id="userpw_re" maxlength="20" placeholder="비밀번호 재확인">
+        <span class="inputtext">이름</span>
+        <input type="text" name="username" id="username" placeholder="이름을 입력하세요(2~5글자 사이의 한글이름)">
+        <span class="inputtext">휴대전화<span class="terms_choice"
+                style="font-size: 12px; font-weight: 400;color: #8e8e8e;"></span></span>
+        <input type="text" name="hp" id="hp" placeholder="전화번호를 입력하세요(-포함하여 작성)" style="margin-bottom: 19px">
+        <span class="inputtext">이메일</span>
+        <input type="text" name="email" id="email" placeholder="이메일을 입력하세요" style="margin-bottom: 19px">
+
+        <button onclick="sendit()">가입하기</button>
+    </div>
+    <script src="../../js/auth/signup.js" defer></script>
+</body>
+
+</html>
