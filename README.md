@@ -14,7 +14,7 @@
 
 ## 3. Information Architecture
 <div align="center">
-  <img src="https://github.com/xoos0420/dmz/assets/131944211/ba987eb8-e31e-4b61-8b21-8cdc50a6a833" width= 80% height= 80% alt="UDiro logo">
+  <img width="80%" height="60%" alt="UDiro logo" src="https://github.com/xoos0420/dmz/assets/131944211/ba987eb8-e31e-4b61-8b21-8cdc50a6a833"/>
 </div>
 
 ## 4. Main Service
