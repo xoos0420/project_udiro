@@ -35,7 +35,16 @@
 * 서울시 공공데이터의 문화, 행사, 축제 데이터 API를 이용하여 DB에 저장
 * 저장된 DB을 통해 해당 주소로 데이터를 html, css, js를 통해 웹사이트 구조와 함께 반환
 * 검색기능 구현을 통한 원할한 정보 취득 가능
-* <br>
+<br>
+
+## 6. Admin
+<div align="center">
+  <img width="80%" height="60%" src="https://github.com/xoos0420/udrio/assets/131944211/d4f33e97-38df-4141-87a4-c8059853e460"/>
+</div>
+
+<div align="center">
+  <img width="80%" height="60%" src="https://github.com/xoos0420/udrio/assets/131944211/d4f33e97-38df-4141-87a4-c8059853e460"/>
+</div>
 
 ## 5. STACKS
 <div align="center">
