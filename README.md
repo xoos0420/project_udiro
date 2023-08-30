@@ -42,18 +42,14 @@
   <img width="80%" height="60%" src="https://github.com/xoos0420/udrio/assets/131944211/571f9985-dbc5-486c-8b79-01774806a16e"/>
 </div>
 
-* UDRIO ADMIN의 CRUD를 통해 HOMEPAGE를 관리
-*  
+* UDRIO ADMIN의 CRUD를 통해 HOMEPAGE의 USER 관리
 <br>
 
 <div align="center">
   <img width="80%" height="60%" src="https://github.com/xoos0420/udrio/assets/131944211/a9fe90d2-29f5-490f-9b63-7a3019bae6a3"/>
 </div>
 
-* 서울시 실시간 도시데이터 API에서 데이터 파싱 후 값을 저장
-* 서울시 혼잡도 지역을 기반으로 움직이는 원을 생성
-* 화장실 및 주차장 등의 도시 편의시설 표시
-* 검색기능 구현을 통한 원할한 정보 취득 가능
+* UDRIO ADMIN의 CRUD를 통해 문화,축제 PAGE 관리
 <br>
 
 ## 5. STACKS
